@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item arrayId="1" arrayName="3人阵-力量" arrayDesc="增加全体5%攻击" maxNum="3" arrayBuff="21001" myPositions="5.5,7,8.5" friendPosition="2" map="teammap_3_1" />
+  <item arrayId="2" arrayName="3人阵-防御" arrayDesc="增加全体5%防御" maxNum="3" arrayBuff="21002" myPositions="5.5,2,8.5" friendPosition="7" map="teammap_3_1" />
+  <item arrayId="3" arrayName="4人阵-力量" arrayDesc="增加全体10%攻击" maxNum="4" arrayBuff="21004" myPositions="5.5,7,3,8.5" friendPosition="1" map="teammap_4_1" />
+  <item arrayId="4" arrayName="4人阵-防御" arrayDesc="增加全体10%防御" maxNum="4" arrayBuff="21005" myPositions="0.5,1.5,2.5,8" friendPosition="3" map="teammap_4_1" />
+  <item arrayId="5" arrayName="4人阵-魔法" arrayDesc="增加全体10%魔法" maxNum="4" arrayBuff="21007" myPositions="0.5,6.5,7.5,3.5" friendPosition="2" map="teammap_4_1" />
+  <item arrayId="6" arrayName="4人阵-敏捷" arrayDesc="增加全体10%敏捷" maxNum="4" arrayBuff="21008" myPositions="1,2,7.5,8.5" friendPosition="5" map="teammap_4_1" />
+  <item arrayId="7" arrayName="5人阵-力量" arrayDesc="增加全体15%力量" maxNum="5" arrayBuff="21009" myPositions="5.5,0,3,4,8.5" friendPosition="7" map="teammap_5_1" />
+  <item arrayId="8" arrayName="5人阵-防御" arrayDesc="增加全体15%防御" maxNum="5" arrayBuff="21010" myPositions="0,1,2,3,4" friendPosition="7" map="teammap_5_1" />
+  <item arrayId="9" arrayName="5人阵-魔法" arrayDesc="增加全体15%魔法" maxNum="5" arrayBuff="21012" myPositions="0,6,1.5,2.5,4" friendPosition="8" map="teammap_5_1" />
+  <item arrayId="10" arrayName="5人阵-敏捷" arrayDesc="增加全体15%敏捷" maxNum="5" arrayBuff="21013" myPositions="0,1,7,3,4" friendPosition="2" map="teammap_5_1" />
+</datatable>
+

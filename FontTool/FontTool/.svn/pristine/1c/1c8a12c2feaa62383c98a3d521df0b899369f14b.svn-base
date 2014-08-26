@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item mapType="100" typeName="魔法领地" theme="forest" fightpic="forest" />
+  <item mapType="101" typeName="矮人森林" theme="forest,grave" fightpic="grave" />
+  <item mapType="102" typeName="无忧岛" theme="grassland" fightpic="grassland" />
+  <item mapType="103" typeName="阿格拉" theme="desert" fightpic="desert" />
+  <item mapType="104" typeName="冰雪谷" theme="snowfield" fightpic="snowfield" />
+  <item mapType="105" typeName="亚特兰提卡" theme="sea,seaisland" fightpic="sea" />
+  <item mapType="106" typeName="血色领地" theme="volcano" fightpic="volcano" />
+  <item mapType="999" typeName="测试地图" theme="snowfield" fightpic="snowfield" />
+</datatable>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item groupId="1" groupName="蛮族意志" memberId="10011,10012,10013,10014,10015" groupSkill="25001" groupDesc="场上有蛮族战士与蛮族勇士时触发，可以发起致命一击" />
+  <item groupId="2" groupName="开锁大师" memberId="10021,10022,10031,10032,10041,10042,10043,10051,10052,10053,10054" groupSkill="26001" groupDesc="可以打开地图中上锁的箱子" />
+  <item groupId="3" groupName="掘地三尺" memberId="10071," groupSkill="26002" groupDesc="采集地图中的矿物" />
+  <item groupId="4" groupName="英雄" memberId="40001,40002,40003,40004,40005,40006,40007,40008" groupSkill="0" groupDesc="主角卡组" />
+  <item groupId="5" groupName="地精联盟" memberId="" groupSkill="25002" groupDesc="场上所有盗贼系角色，敏捷提升10%" />
+  <item groupId="6" groupName="大自然的恶意" memberId="" groupSkill="25003" groupDesc="植物系卡组" />
+  <item groupId="7" groupName="海洋的召唤" memberId="" groupSkill="25004" groupDesc="海洋系卡组" />
+</datatable>
+

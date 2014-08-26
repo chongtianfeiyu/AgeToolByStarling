@@ -1,0 +1,57 @@
+package com.verycool.hero.components
+{
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.text.TextField;
+	import flash.text.TextFieldType;
+
+	import starling.display.Image;
+	import starling.display.Sprite;
+
+
+	/**
+	 *
+	 * MyTextField.as
+	 *
+	 * @author moyubing
+	 * @date 2013-9-13
+	 *
+	 */
+
+	public class MyTextField extends Sprite
+	{
+		[Embed(source="/../assets/art/ui/font/MSYH.ttf", fontName="msyh", embedAsCFF="false", fontFamily="msyh", unicodeRange="U+4d,U+69,U+63,U+72,U+6f,U+73,U+66,U+74,U+20,U+59,U+61,U+48,U+65,u+6b22,u+ffff8fce,u+4f60,U+2c,U+7b,U+30,U+7d,u+7b49,u+7ea7,U+31,u+5192,u+ffff9669,u+ffff961f,u+4f0d,u+ffff82f1,u+ffff96c4,u+5f3a,u+5316,u+ffff80cc,u+5305,u+5546,u+5e97,u+ffff8fd4,u+56de,u+4e3b,u+754c,u+ffff9762,u+66f4,u+591a,u+65e0,u+5458,u+66ff,u+6362,u+653e,u+7f6e,u+79fb,u+ffff9664,u+53d6,u+6d88,u+4f7f,u+7528,u+ffff8d2d,u+4e70,u+667a,u+6167,u+654f,u+6377,u+653b,u+51fb,u+ffff9632,u+5fa1,u+751f,u+547d,u+6210,u+ffff957f,u+ffff9053,u+5177,u+ffff8bf4,u+660e,U+3a,u+643a,u+5e26,u+6570,u+ffff91cf,u+ffff89e3,u+ffff9501,u+ffff9635,u+578b,U+33,u+4eba,U+2d,u+529b,U+34,u+ffff9b54,u+6cd5,U+35,u+589e,u+52a0,u+5168,u+4f53,U+25")]
+		public static const msyhFont:Class;
+
+//		[Embed(source="/../assets/art/ui/font/MSYH.TTF",fontName="msyh",embedAsCFF="false",fontFamily="msyh")]
+//		public static const msyhBD
+		public var textField:TextField;
+
+		public function MyTextField(width:Number, height:Number)
+		{
+			super();
+			textField=new TextField();
+			textField.type=TextFieldType.DYNAMIC;
+			textField.width=width;
+			textField.height=height;
+			renderText();
+		}
+
+		public function renderText():void
+		{
+			var bd:BitmapData=new BitmapData(textField.width, textField.height, true, 0x0);
+			bd.draw(textField);
+			this.removeChildren(0, -1, true);
+			var image:Image=Image.fromBitmap(new Bitmap(bd));
+			this.addChild(image);
+		}
+
+		override public function dispose():void
+		{
+			this.removeChildren(0, -1, true);
+			super.dispose();
+		}
+	}
+}
+
+

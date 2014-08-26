@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:a5d6e256c54003eb27451654785eb93c$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="gifticons.png" width="1024" height="1024">
+    <sprite n="ansha" x="683" y="304" w="225" h="300"/>
+    <sprite n="gedou" x="456" y="304" w="225" h="300"/>
+    <sprite n="huanshu" x="229" y="606" w="225" h="300"/>
+    <sprite n="mofa" x="229" y="304" w="225" h="300"/>
+    <sprite n="shengming" x="683" y="2" w="225" h="300"/>
+    <sprite n="siwang" x="456" y="2" w="225" h="300"/>
+    <sprite n="tiebi" x="229" y="2" w="225" h="300"/>
+    <sprite n="yexing" x="2" y="606" w="225" h="300"/>
+    <sprite n="yinyou" x="2" y="304" w="225" h="300"/>
+    <sprite n="yizhi" x="2" y="2" w="225" h="300"/>
+</TextureAtlas>

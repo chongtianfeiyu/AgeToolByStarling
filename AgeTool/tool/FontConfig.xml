@@ -1,0 +1,7 @@
+<fonts>
+	<font fontFamily="simhei"
+		  fontName="simhei"
+		  fontPath="/../assets/fonts/simhei.ttf">
+		<asfile path="../src/com/icerain/age/utils/TS.as"/>
+	</font>
+</fonts>

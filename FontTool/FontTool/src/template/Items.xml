@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item modelId="101" itemName="体力药剂" itemType="1" useType="0" canTrade="0" itemScript="PowerDrug" itemIcon="sp_bottle" itemDesc="能够恢复5点体力，在任何时候都可使用。" />
+  <item modelId="102" itemName="上等体力药剂" itemType="1" useType="0" canTrade="1" itemScript="LargePowerDrug" itemIcon="large_sp_bottle" itemDesc="能够迅速恢复全部体力。在任何时候都可使用。" />
+  <item modelId="103" itemName="战斗药剂" itemType="1" useType="0" canTrade="0" itemScript="EnenrgDrug" itemIcon="fight_bottle" itemDesc="能够恢复1点怒气，在任何时候都可使用。" />
+  <item modelId="104" itemName="上等战斗药剂" itemType="1" useType="0" canTrade="1" itemScript="LargeEnenrgDrug" itemIcon="large_fight_bottle" itemDesc="能够恢复全部怒气，在任何时候都可使用。" />
+  <item modelId="105" itemName="疗伤药剂" itemType="1" useType="1" canTrade="0" itemScript="HpDrug" itemIcon="hp_bottle" itemDesc="仅在场景中可使用，能够恢复1名英雄的生命值。" />
+  <item modelId="106" itemName="回魂药剂" itemType="1" useType="1" canTrade="0" itemScript="ReviveDrug" itemIcon="revive_bottle" itemDesc="仅在场景中可使用，复活1名英雄并恢复全部生命值。" />
+  <item modelId="107" itemName="上等回魂药剂" itemType="1" useType="1" canTrade="1" itemScript="LargeReviveDrug" itemIcon="large_revive_bottle" itemDesc="仅在场景中可使用，复活所有死亡的英雄并恢复全部生命值。" />
+  <item modelId="108" itemName="净化泉水" itemType="1" useType="3" canTrade="0" itemScript="SpringWater" itemIcon="water" itemDesc="普通的泉水，有一定几率净化英灵。" />
+  <item modelId="109" itemName="净化圣水" itemType="1" useType="3" canTrade="1" itemScript="HolyWater" itemIcon="large_water" itemDesc="珍贵的泉水，100%几率净化各种品质的英灵。" />
+  <item modelId="201" itemName="生命果实" itemType="2" useType="2" canTrade="1" itemScript="HpFruit" itemIcon="hp_gain" itemDesc="食用后增加50点生命，单个英雄最多食用10次。" />
+  <item modelId="202" itemName="攻击果实" itemType="2" useType="2" canTrade="1" itemScript="AttackFruit" itemIcon="atk_gain" itemDesc="食用后增加50点攻击，单个英雄最多食用10次。" />
+  <item modelId="203" itemName="防御果实" itemType="2" useType="2" canTrade="1" itemScript="DefenseFruit" itemIcon="def_gain" itemDesc="食用后增加50点防御，单个英雄最多食用10次。" />
+  <item modelId="204" itemName="智慧果实" itemType="2" useType="2" canTrade="1" itemScript="WisdomFruit" itemIcon="wis_gain" itemDesc="食用后增加50点智慧，单个英雄最多食用10次。" />
+  <item modelId="205" itemName="敏捷果实" itemType="2" useType="2" canTrade="1" itemScript="AgileFruit" itemIcon="agi_gain" itemDesc="食用后增加50点敏捷，单个英雄最多食用10次。" />
+  <item modelId="301" itemName="钱袋" itemType="3" useType="3" canTrade="0" itemScript="MoneyBag" itemIcon="gold_bag" itemDesc="根据等级获得不同数量的钱" />
+  <item modelId="302" itemName="银宝箱" itemType="4" useType="3" canTrade="0" itemScript="CopperBox" itemIcon="box_silver" itemDesc="打开获得铜宝珠,疗伤药剂或净化泉水之一" />
+  <item modelId="303" itemName="金宝箱" itemType="4" useType="3" canTrade="0" itemScript="SilverBox" itemIcon="box_gold" itemDesc="打开获得银宝珠,回魂药剂或战斗药剂之一" />
+  <item modelId="304" itemName="上锁的宝箱" itemType="4" useType="3" canTrade="0" itemScript="SilverBox" itemIcon="box_lock" itemDesc="打开获得银宝珠,体力药剂,战斗药剂或回魂药剂之一" />
+  <item modelId="305" itemName="矿物" itemType="4" useType="3" canTrade="0" itemScript="SilverBox" itemIcon="mine_bag" itemDesc="打开获得银宝珠,体力药剂,战斗药剂或回魂药剂之一" />
+  <item modelId="401" itemName="铜制抽卡币" itemType="3" useType="0" canTrade="0" itemScript="" itemIcon="cooper_coin" itemDesc="在抽卡商店处使用，有一定几率获得稀有英雄" />
+  <item modelId="402" itemName="银制抽卡币" itemType="3" useType="0" canTrade="0" itemScript="" itemIcon="silver_coin" itemDesc="在抽卡商店处使用，获得稀有英雄" />
+  <item modelId="403" itemName="金制抽卡币" itemType="3" useType="0" canTrade="0" itemScript="" itemIcon="gold_coin" itemDesc="在抽卡商店处使用，极大概率获得稀有英雄" />
+  <item modelId="404" itemName="活动抽卡币" itemType="3" useType="0" canTrade="0" itemScript="" itemIcon="event_coin" itemDesc="在抽卡商店处使用，获得英雄" />
+</datatable>
+

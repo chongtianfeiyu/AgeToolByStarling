@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item mainPack="2" cardPack="1" randPack1="30" randPack2="20" cards="10061_40,10071_90,10111_100" />
+  <item mainPack="2" cardPack="2" randPack1="60" randPack2="50" cards="10081_40,10091_70,10101_90,10012_100" />
+  <item mainPack="2" cardPack="3" randPack1="80" randPack2="100" cards="10051_40,10011_90,10021_100" />
+  <item mainPack="2" cardPack="4" randPack1="100" randPack2="100" cards="10081_40,10091_70,10101_90,10012_100" />
+  <item mainPack="3" cardPack="1" randPack1="30" randPack2="20" cards="10061_40,10071_90,10111_100" />
+  <item mainPack="3" cardPack="2" randPack1="60" randPack2="50" cards="10081_40,10091_70,10101_90,10012_100" />
+  <item mainPack="3" cardPack="3" randPack1="80" randPack2="100" cards="10051_40,10011_90,10021_100" />
+  <item mainPack="3" cardPack="4" randPack1="100" randPack2="100" cards="10081_40,10091_70,10101_90,10012_100" />
+  <item mainPack="4" cardPack="1" randPack1="50" randPack2="30" cards="10061_40,10071_90,10111_100" />
+  <item mainPack="4" cardPack="2" randPack1="80" randPack2="60" cards="10081_40,10091_70,10101_90,10012_100" />
+  <item mainPack="4" cardPack="3" randPack1="100" randPack2="100" cards="10051_40,10011_90,10021_100" />
+</datatable>
+

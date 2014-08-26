@@ -1,0 +1,16 @@
+<fonts>
+	<font fontFamily="simhei"
+		  fontName="simhei"
+		  fontPath="assets/fonts/simhei.swf">
+		<asfile path="src/TS.as"/>
+		<xmlfile path="assets/Combo.xml">
+			<column flag="desc"/>
+		</xmlfile>
+		<xmlfile path="assets/Skill.xml">
+			<column flag="gift"/>
+			<column flag="name"/>
+			<column flag="desc"/>
+			<column flag="distance"/>
+		</xmlfile>
+	</font>
+</fonts>

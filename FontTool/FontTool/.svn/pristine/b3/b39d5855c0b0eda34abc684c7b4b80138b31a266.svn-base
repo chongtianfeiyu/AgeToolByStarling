@@ -1,0 +1,11 @@
+<fonts>
+	<font fontFamily="msyh"
+		  fontName="msyh"
+		  fontPath="/../assets/art/ui/font/MSYH.ttf">
+		<asfile path="./src/TS.as"/>
+		<xmlfile path="./src/template/Array.xml">
+			<column flag="arrayName"/>
+			<column flag="arrayDesc"/>
+		</xmlfile>
+	</font>
+</fonts>

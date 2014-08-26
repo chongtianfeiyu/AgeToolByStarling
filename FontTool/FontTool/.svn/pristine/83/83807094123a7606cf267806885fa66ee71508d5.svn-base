@@ -1,0 +1,149 @@
+package util;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.Character.UnicodeBlock;
+import java.util.Iterator;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.input.SAXBuilder;
+
+import vo.FontVO;
+
+public class DataUtil {
+
+	@SuppressWarnings("unchecked")
+	public static String getValueInXmlFile(String path, String flag) {
+		String ret = "";
+		SAXBuilder builder = new SAXBuilder(false);
+		Document document;
+		try {
+			document = builder.build(path);
+			Element root = document.getRootElement();
+			List<Element> list = root.getChildren("item");
+			for (Iterator<Element> i = list.iterator(); i.hasNext();) {
+				Element columnElem = (Element) i.next();
+				ret += columnElem.getAttributeValue(flag);
+			}
+			return ret;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return ret;
+		}
+	}
+
+	public static String deleteRepeatChar(String input) {
+		String ret = "";
+		for (int i = 0; i < input.length(); i++) {
+			char ch = input.charAt(i);
+			if (ret.indexOf(ch) == -1) {
+				ret += ch;
+			}
+		}
+
+		return ret;
+	}
+
+	public static String getValueInAsFile(String path) {
+		String ret = "";
+		BufferedReader in;
+		try {
+			in = new BufferedReader(new FileReader(path));
+			StringBuilder sb = new StringBuilder();
+			String str;
+			while ((str = in.readLine()) != null) {
+				sb.append(str);
+				sb.append("\n");
+			}
+			in.close();
+			String asFileString = sb.toString();
+			Pattern pattern = Pattern
+					.compile("public static (var|const) [A-Z_0-9]+:String=\"(.*)\"");
+			Matcher matcher = pattern.matcher(asFileString);
+			while (matcher.find())
+				ret += matcher.group(2);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return ret;
+	}
+
+	/**
+	 * utf-8 转unicode
+	 * 
+	 * @param inStr
+	 * @return String
+	 */
+	public static String utf8ToUnicode(String inStr) {
+		char[] myBuffer = inStr.toCharArray();
+
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < inStr.length(); i++) {
+			UnicodeBlock ub = UnicodeBlock.of(myBuffer[i]);
+			if (ub == UnicodeBlock.BASIC_LATIN) {
+				if (sb.length() != 0)
+					sb.append(",U+" + Integer.toHexString(myBuffer[i]));
+				else
+					sb.append("U+" + Integer.toHexString(myBuffer[i]));
+			} else if (ub == UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS) {
+				int j = (int) myBuffer[i] - 65248;
+				sb.append((char) j);
+			} else {
+				short s = (short) myBuffer[i];
+				String hexS = Integer.toHexString(s);
+				String unicode = "U+" + hexS;
+				if (sb.length() != 0)
+					sb.append("," + unicode.toLowerCase());
+				else
+					sb.append(unicode);
+			}
+		}
+		return sb.toString();
+	}
+
+	public static void writhTo(FontVO vo, String targetPath, String unicodes) {
+		BufferedReader in;
+		try {
+			in = new BufferedReader(new FileReader(targetPath));
+			StringBuilder sb = new StringBuilder();
+			String str;
+			while ((str = in.readLine()) != null) {
+				sb.append(str);
+				sb.append("\n");
+			}
+			in.close();
+			String asFileString = sb.toString();
+			Pattern pattern = Pattern
+					.compile("\\[Embed\\(source=\"(.*)\", fontName=\""
+							+ vo.fontFamily
+							+ "\", (embedAsCFF=\"false\",){0,1} fontFamily=\""
+							+ vo.fontFamily + "\"\\, unicodeRange=\"(.*)\"\\)\\]");
+			String newEmedStr = "[Embed(source=\"" + vo.fontPath
+					+ "\", fontName=\"" + vo.fontName
+					+ "\", embedAsCFF=\"false\"," + " fontFamily=\""
+					+ vo.fontFamily + "\"" + ", unicodeRange=\"" + unicodes
+					+ "\")]";
+			asFileString = asFileString.replaceAll(pattern.pattern(),
+					newEmedStr);
+
+			BufferedWriter wr = new BufferedWriter(new FileWriter(targetPath));
+			wr.write(asFileString);
+			wr.close();
+			// System.out.println(asFileString);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

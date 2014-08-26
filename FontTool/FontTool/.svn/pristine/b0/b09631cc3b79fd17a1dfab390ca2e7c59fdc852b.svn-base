@@ -1,0 +1,37 @@
+package com.verycool.hero
+{
+
+	public class TS
+	{
+		public static const FONT_NAME:String="Microsoft YaHei";
+
+		public static const MAP_TO_UI_WELCOME_TEXT:String="欢迎你,{0},等级{1}";
+		public static const BTN_START_TEXT:String="冒险";
+		public static const BTN_TEAM_TEXT:String="队伍";
+		public static const BTN_HERO_TEXT:String="英雄";
+		public static const BTN_STRENGTH_TEXT:String="强化";
+		public static const BTN_BAG_TEXT:String="背包";
+		public static const BTN_SHOP_TEXT:String="商店";
+		public static const BTN_HOME_TEXT:String="返回主界面";
+		public static const BTN_MORE_TEXT:String="更多";
+		public static const TEAM_NONE_MEMBER:String="无队员";
+
+		public static const TEAM_REPLACE_TEXT:String="替换";
+		public static const TEAM_PLACE_TEXT:String="放置";
+		public static const TEAM_REMOVE_TEXT:String="移除";
+		public static const TEAM_CANCEL_TEXT:String="取消";
+		public static const USE_TEXT:String="使用";
+		public static const BUY_TEXT:String="购买";
+
+		public static const INT_TEXT:String="智慧";
+		public static const AGI_TEXT:String="敏捷";
+		public static const ATK_TEXT:String="攻击";
+		public static const DEF_TEXT:String="防御";
+		public static const HP_TEXT:String="生命";
+		public static const GROWTH_TEXT:String="成长";
+
+		public static const ITEM_DESC:String="道具说明:";
+		public static const ITEM_OWN_NUM:String="携带数量";
+		public static const UNLOCK_FORMATION:String="解锁阵型";
+	}
+}

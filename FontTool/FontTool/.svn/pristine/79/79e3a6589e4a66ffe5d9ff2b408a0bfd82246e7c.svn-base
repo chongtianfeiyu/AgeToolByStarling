@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item masterCardId="10011" seedCardId="10011" newCardId="10012" />
+  <item masterCardId="10012" seedCardId="10011,10012" newCardId="10013" />
+  <item masterCardId="10013" seedCardId="10011,10012,10013" newCardId="10014" />
+  <item masterCardId="10014" seedCardId="10011,10012,10013,10014" newCardId="10015" />
+  <item masterCardId="10021" seedCardId="10021" newCardId="10022" />
+  <item masterCardId="10031" seedCardId="10031" newCardId="10032" />
+  <item masterCardId="10032" seedCardId="10031,10032" newCardId="10033" />
+  <item masterCardId="10041" seedCardId="10041" newCardId="10042" />
+  <item masterCardId="10042" seedCardId="10041,10042" newCardId="10043" />
+  <item masterCardId="10043" seedCardId="10041,10042,10043" newCardId="10044" />
+  <item masterCardId="10051" seedCardId="10051" newCardId="10052" />
+  <item masterCardId="10052" seedCardId="10051,10052" newCardId="10053" />
+  <item masterCardId="10053" seedCardId="10051,10052,10053" newCardId="10054" />
+  <item masterCardId="10061" seedCardId="10061" newCardId="10062" />
+</datatable>
+

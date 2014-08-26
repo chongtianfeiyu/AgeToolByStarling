@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item id="1" icon="icon_skill_buff55:debuff;icon_skill_buff01:debuff" desc="第一次攻击对 [束缚] 敌方目标造成 [倒地]" />
+  <item id="2" icon="icon_skill_buff01:debuff" desc="第二次攻击对 [倒地] 敌方目标造成 48% 额外伤害" />
+  <item id="3" icon="icon_skill_buff04:debuff" desc="对带有[减速] 敌方目标造成 26% 额外伤害" />
+  <item id="4" icon="icon_skill_buff04:debuff;icon_skill_buff01:debuff" desc="对带有[减速] 敌方目标造成 [倒地]" />
+  <item id="5" icon="icon_skill_buff21:debuff" desc="对带有[精神震击] 敌对目标造成 [倒地] 持续时间30% 增加" />
+  <item id="6" icon="icon_skill_buff122:debuff" desc="对带有[畏缩] 敌方目标造成 12% 额外伤害" />
+  <item id="7" icon="icon_skill_buff01:debuff" desc="对带有[倒地] 敌方目标造成 47% 额外伤害" />
+  <item id="8" icon="icon_skill_buff67:debuff" desc="对带有[流血] 敌方目标造成 37% 额外伤害" />
+  <item id="9" icon="icon_skill_buff49:buff" desc="自身带有[黑暗之拥]效果时，不会筋疲力尽" />
+  <item id="10" icon="icon_skill_buff122:debuff" desc="对带有[畏缩] 敌方目标造成 13% 额外伤害" />
+  <item id="11" icon="icon_skill_buff01:debuff" desc="对带有[倒地] 敌方目标造成 23% 额外伤害" />
+  <item id="12" icon="icon_skill_buff57:debuff" desc="对带有[标记] 敌方目标造成 [倒地]" />
+  <item id="13" icon="icon_skill_buff57:debuff" desc="对带有[标记] 敌方目标造成 77% 额外伤害(不包括杀气伤害)" />
+  <item id="14" icon="icon_skill_buff21:debuff" desc="对带有[精神震击] 敌对目标造成 [眩晕], [倒地] 持续时间增加30%" />
+  <item id="15" icon="icon_skill_buff122:debuff" desc="对带有[畏缩] 敌方目标造成 11% 额外伤害" />
+  <item id="16" icon="icon_skill_buff04:debuff" desc="对带有[减速] 敌方目标造成 24% 额外伤害" />
+  <item id="17" icon="icon_skill_buff67:debuff" desc="对带有[流血] 敌方目标造成 35% 额外伤害" />
+  <item id="18" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 [倒地]" />
+  <item id="19" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 33% 额外伤害(不包括杀气伤害)" />
+  <item id="20" icon="icon_skill_buff69:buff" desc="自身带有[隐遁]效果时，会重置[奇袭]技能的冷却时间" />
+  <item id="21" icon="icon_skill_buff55:debuff" desc="对带有[束缚] 敌方目标造成 87~85 魔法伤害" />
+  <item id="22" icon="icon_skill_buff21:debuff" desc="对带有[精神震击] 敌方目标将伤害量的41%转化为自身的生命" />
+  <item id="23" icon="icon_skill_buff119:debuff" desc="对带有[恐惧] 敌方目标造成 55% 额外伤害" />
+  <item id="24" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 118~124点持续伤害" />
+  <item id="25" icon="icon_skill_buff59:debuff" desc="对带有[触电] 敌方目标造成 141~151 点魔法伤害" />
+  <item id="26" icon="icon_skill_buff61:debuff" desc="对带有[着火] 敌对目标 [浮空]更高" />
+  <item id="27" icon="icon_skill_buff61:debuff" desc="对带有[着火] 敌对目标造成 [恐惧] 增加1.5秒持续时间" />
+  <item id="28" icon="icon_skill_buff37:debuff;icon_skill_buff16:debuff" desc="对带[物理技能封印]效果的敌人施放时，在4秒内[沉默]" />
+  <item id="29" icon="icon_skill_buff16:debuff;icon_skill_buff37:debuff" desc="对带[沉默]效果的敌人施放时，使敌人4秒内陷入[物理技能封印]效果" />
+  <item id="30" icon="icon_skill_buff64:debuff" desc="对带有[冰冻] 敌对目标造成 [睡眠] 持续时间10秒增加" />
+  <item id="31" icon="icon_skill_buff61:debuff" desc="对带有[着火]效果的敌人施放时，增加2秒的[恐惧]时间" />
+  <item id="32" icon="icon_skill_buff59:debuff" desc="对带有[触电] 敌方目标造成 46% 额外伤害" />
+  <item id="33" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂]效果时，减少0.6秒[圣光洗礼]技能的冷却时间" />
+  <item id="34" icon="icon_skill_buff42:buff" desc="自身带有[魔力护盾]效果时，[圣光洗礼]技能变成瞬发" />
+  <item id="35" icon="icon_skill_buff87:buff" desc="目标为友好目标并带有[生命泉涌]效果时，增加16%恢复量" />
+  <item id="36" icon="icon_skill_buff75:debuff" desc="对带有[魅惑]效果的敌人施放时，附加26%伤害，并解除魅惑效果。" />
+  <item id="37" icon="icon_skill_buff124:debuff" desc="对带有[枪刺] 敌方目标造成 45% 额外伤害" />
+  <item id="38" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂]效果时，减少2.1秒[全部治疗]技能的冷却时间" />
+  <item id="39" icon="icon_skill_buff87:buff" desc="目标为友好目标并导游[生命泉涌]效果时，增加30%治疗量" />
+  <item id="40" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂]效果时，减少0.9秒[魔力馈赠]技能的冷却时间" />
+  <item id="41" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂]效果时，减少1.2秒[心脉连击]技能的冷却时间" />
+  <item id="42" icon="icon_skill_buff119:debuff;icon_skill_buff123:debuff" desc="对带有[恐惧] 敌方目标造成 [深度畏缩] 效果" />
+  <item id="43" icon="icon_skill_buff67:debuff" desc="对带有[流血] 敌方目标造成 30% 额外伤害 " />
+  <item id="44" icon="icon_skill_buff123:debuff;icon_skill_buff10:debuff" desc="对带有[深度畏缩] 敌方目标造成 眩晕 效果" />
+  <item id="45" icon="icon_skill_buff124:debuff" desc="对带有[枪刺] 敌方目标造成 48% 额外伤害" />
+  <item id="46" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 46% 额外伤害" />
+  <item id="47" icon="icon_skill_buff123:debuff" desc="对带有[深度畏缩] 敌方目标造成 50% 伤害吸收效果" />
+  <item id="48" icon="icon_skill_buff124:debuff;icon_skill_buff125:debuff" desc="对带有[枪刺] 敌方目标造成 [中毒] 效果" />
+  <item id="49" icon="icon_skill_buff119:debuff" desc="对带有[恐惧] 敌方目标造成 101% 额外伤害" />
+  <item id="50" icon="icon_skill_buff42:buff" desc="自身带[魔力护盾]效果时，对敌人附加61%伤害" />
+  <item id="51" icon="icon_skill_buff55:debuff" desc="对带有[束缚] 敌方目标造成 31% 额外伤害" />
+  <item id="52" icon="icon_skill_buff21:debuff" desc="对带有[精神震击] 敌对目标 眩晕 持续时间30% 增加" />
+  <item id="53" icon="icon_skill_buff121:buff" desc="自身带有[野熊之力]效果时，增加20%效果" />
+  <item id="54" icon="icon_skill_buff10:debuff;icon_skill_buff01:debuff" desc="对带有[眩晕] 敌方目标造成 [倒地]" />
+  <item id="55" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 42% 额外伤害" />
+  <item id="56" icon="icon_skill_buff42:buff" desc="自身带[魔力护盾]效果时，对敌人附加68%伤害" />
+  <item id="57" icon="icon_skill_buff38:buff" desc="自身带有 [幻醒] 效果 时对敌方目标造成 60% 额外伤害" />
+  <item id="58" icon="icon_skill_buff121:buff" desc="自身带有[野熊之力]效果时，每秒恢复量增加33%" />
+  <item id="59" icon="icon_skill_buff38:buff" desc="当自身带有[唤醒]效果时，增加50%效果" />
+  <item id="60" icon="icon_skill_buff41:buff;icon_skill_buff127:buff" desc="自身带有[意志专注]效果时，附加[魔法防御]效果" />
+  <item id="61" icon="icon_skill_buff04:debuff" desc="对带有[减速] 敌方目标造成 44% 额外伤害" />
+  <item id="62" icon="icon_skill_buff38:buff" desc="当自身带有[唤醒]效果时，威胁值增加2倍" />
+  <item id="63" icon="icon_skill_buff28:debuff;icon_skill_buff120:debuff" desc="获得当前被[挑衅]敌人的最高威胁值" />
+  <item id="64" icon="icon_skill_buff10:debuff" desc="对带有[眩晕] 敌方目标造成 23% 额外伤害" />
+  <item id="65" icon="icon_skill_buff04:debuff;icon_skill_buff10:debuff" desc="对带有[减速] 敌方目标造成 [眩晕] 效果" />
+  <item id="66" icon="icon_skill_buff67:debuff;icon_skill_buff67:debuff" desc="对带有[流血] 敌方目标造成 高级 流血 效果" />
+  <item id="67" icon="icon_skill_buff125:debuff" desc="对带有[中毒] 敌方目标造成 27% 持续 额外伤害" />
+  <item id="68" icon="icon_skill_buff04:debuff;icon_skill_buff04:debuff" desc="使带有[减速] 敌方目标更加迟缓" />
+  <item id="69" icon="icon_skill_buff125:debuff" desc="对带有[中毒] 敌方目标造成 38% 额外伤害" />
+  <item id="70" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂]效果时，附加47%伤害，且消耗当前累积的意志" />
+  <item id="71" icon="icon_skill_buff43:buff" desc="自身带有[意志高昂] 效果时附加52% 伤害, 并且消耗当前累积意志" />
+  <item id="72" icon="icon_skill_buff28:debuff" desc="对带有[被挑衅] 敌方目标造成3倍威胁值" />
+  <item id="73" icon="icon_skill_buff29:buff;icon_skill_buff127:buff" desc="自身带有[防御壁垒]效果时，附加[魔法防御]效果" />
+  <item id="74" icon="icon_skill_buff04:debuff" desc="对带有[减速]效果的敌人施放时，有一定几率额外偷取一个目标身上的增益效果" />
+  <item id="75" icon="icon_skill_buff75:debuff" desc="对带有[魅惑] 敌方目标造成 [恐惧]并消耗[魅惑]效果" />
+  <item id="76" icon="icon_skill_buff75:debuff;icon_skill_buff04:debuff" desc="对带有[魅惑] 敌方目标造成 [减速] 效果" />
+  <item id="77" icon="icon_skill_buff75:debuff" desc="对带有[魅惑] 敌方目标造成 37% 额外伤害, 并解除[魅惑]效果" />
+  <item id="78" icon="icon_skill_buff75:debuff" desc="对带有[魅惑] 敌方目标 1秒内造成114~157持续伤害" />
+  <item id="79" icon="icon_skill_buff75:debuff" desc="对带有[魅惑]效果的敌人施法时，无视敌人的物理防御力和魔法防御力" />
+  <item id="80" icon="icon_skill_buff75:debuff" desc="对带有[魅惑]效果的敌人施放时，减少敌人30% 所有攻击力" />
+  <item id="81" icon="icon_skill_buff64:debuff" desc="对带有[冰冻] 敌方目标造成 13% 额外伤害" />
+  <item id="82" icon="icon_skill_buff61:debuff;icon_skill_buff126:debuff" desc="对带有[着火] 敌方目标造成 [强力火焰] 效果" />
+  <item id="83" icon="icon_skill_buff21:debuff" desc="对带有[精神震击] 敌方目标造成伤害时 将造成伤害的20%转化为自身魔法值" />
+  <item id="84" icon="icon_skill_buff61:debuff" desc="对带有[着火] 敌方目标造成 15% 额外伤害" />
+  <item id="85" icon="icon_skill_buff64:debuff" desc="对带有[冰冻]效果的敌人施放时，附加持续30秒的[强力冻结]效果" />
+  <item id="86" icon="icon_skill_buff19:debuff" desc="对带有[睡眠] 敌方目标造成 34% 额外伤害" />
+  <item id="87" icon="icon_skill_buff50:debuff" desc="对带有[枪刺] 敌方目标造成 45% 额外伤害" />
+  <item id="88" icon="icon_skill_buff59:debuff" desc="对带有[触电] 敌方目标造成 43% 额外伤害" />
+  <item id="89" icon="icon_skill_buff61:debuff" desc="对带有[着火] 敌方目标造成 26% 额外伤害" />
+  <item id="90" icon="icon_skill_buff64:debuff" desc="对带有[冰冻]效果的玩家施放时，100%使目标冻住双脚" />
+  <item id="91" icon="icon_skill_buff64:debuff" desc="对带有[冰冻] 敌方目标造成 44% 额外伤害" />
+  <item id="92" icon="icon_skill_buff50:debuff" desc="对带有[枪刺] 敌方目标造成 55% 额外伤害" />
+  <item id="93" icon="icon_skill_buff64:debuff" desc="对带有[冰冻] 敌方目标造成 41% 额外伤害" />
+  <item id="94" icon="icon_skill_buff64:debuff" desc="对带有[冰冻] 敌方目标造成 30% 额外伤害" />
+</datatable>
+

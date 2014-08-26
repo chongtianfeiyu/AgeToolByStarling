@@ -1,0 +1,238 @@
+package org.flexlite.domUI.components
+{
+	import flash.display.DisplayObject;
+	import flash.events.Event;
+	
+	import org.flexlite.domCore.dx_internal;
+	import org.flexlite.domUI.core.IVisualElement;
+	import org.flexlite.domUI.events.ElementExistenceEvent;
+	import org.flexlite.domUI.events.IndexChangeEvent;
+	import org.flexlite.domUI.events.UIEvent;
+	import org.flexlite.domUI.layouts.BasicLayout;
+	import org.flexlite.domUI.layouts.supportClasses.LayoutBase;
+	
+	use namespace dx_internal;
+	
+	[DXML(show="true")]
+	
+	/**
+	 * 属性提交事件,当修改选中项时会抛出这个事件。
+	 */	
+	[Event(name="valueCommit", type="org.flexlite.domUI.events.UIEvent")]
+	/**
+	 * 层级堆叠容器,一次只显示一个子对象。
+	 * @author DOM
+	 */
+	public class ViewStack extends Group
+	{
+		/**
+		 * 构造函数
+		 */		
+		public function ViewStack()
+		{
+			super();
+			super.layout = new BasicLayout();
+		}
+
+		/**
+		 * 此容器的布局对象为只读,默认限制为BasicLayout。
+		 */		
+		override public function get layout():LayoutBase
+		{
+			return super.layout;
+		}
+		override public function set layout(value:LayoutBase):void
+		{
+		}
+		
+		private var _createAllChildren:Boolean = false;
+		/**
+		 * 是否立即初始化化所有子项。false表示当子项第一次被显示时再初始化它。默认值false。
+		 */
+		public function get createAllChildren():Boolean
+		{
+			return _createAllChildren;
+		}
+
+		public function set createAllChildren(value:Boolean):void
+		{
+			if(_createAllChildren==value)
+				return;
+			_createAllChildren = value;
+			if(_createAllChildren)
+			{
+				var elements:Array = getElementsContent();
+				for each(var element:IVisualElement in elements)
+				{
+					if(element is DisplayObject&&element.parent!=this)
+					{
+						childOrderingChanged = true;
+						addToDisplayList(DisplayObject(element));
+					}
+				}
+				if(childOrderingChanged)
+					invalidateProperties();
+			}
+		}
+
+
+		private var _selectedChild:IVisualElement;
+		/**
+		 * 当前可见的子元素。
+		 */		
+		public function get selectedChild():IVisualElement
+		{
+			var index:int = selectedIndex;
+			if (index>=0&&index<numElements)
+				return getElementAt(index);
+			return null;
+		}
+		public function set selectedChild(value:IVisualElement):void
+		{
+			var index:int = getElementIndex(value);
+			if(index>=0&&index<numElements)
+				setSelectedIndex(index);
+		}
+		/**
+		 * 未设置缓存选中项的值
+		 */
+		dx_internal static const NO_PROPOSED_SELECTION:int = -2;
+
+		/**
+		 * 在属性提交前缓存选中项索引
+		 */		
+		private var proposedSelectedIndex:int = NO_PROPOSED_SELECTION;
+		
+		dx_internal var _selectedIndex:int = -1;
+		/**
+		 * 当前可见子元素的索引。索引从0开始。
+		 */		
+		public function get selectedIndex():int
+		{
+			return proposedSelectedIndex!=NO_PROPOSED_SELECTION?proposedSelectedIndex:_selectedIndex;
+		}
+		public function set selectedIndex(value:int):void
+		{
+			setSelectedIndex(value);
+		}
+		/**
+		 * 设置选中项索引
+		 */		
+		dx_internal function setSelectedIndex(value:int,notifyListeners:Boolean=true):void
+		{
+			if (value == selectedIndex)
+			{
+				return;
+			}
+			
+			proposedSelectedIndex = value;
+			invalidateProperties();
+			
+			dispatchEvent(new UIEvent(UIEvent.VALUE_COMMIT));
+			if(notifyListeners)
+			{
+				dispatchEvent(new Event("IndexChanged"));//通知TabNavigator自己的选中项发生改变
+			}
+		}
+		
+		/**
+		 * 添加一个显示元素到容器
+		 */		
+		override dx_internal function elementAdded(element:IVisualElement, index:int, notifyListeners:Boolean=true):void
+		{
+			if(_createAllChildren)
+			{
+				if(element is DisplayObject)
+					addToDisplayList(DisplayObject(element), index);
+			}
+			if (notifyListeners)
+			{
+				if (hasEventListener(ElementExistenceEvent.ELEMENT_ADD))
+					dispatchEvent(new ElementExistenceEvent(
+						ElementExistenceEvent.ELEMENT_ADD, false, false, element, index));
+			}
+			
+			element.visible = false;
+			element.includeInLayout = false;
+			if(selectedIndex==-1)
+				setSelectedIndex(0);
+		}
+		/**
+		 * 从容器移除一个显示元素
+		 */		
+		override dx_internal function elementRemoved(element:IVisualElement, index:int, notifyListeners:Boolean=true):void
+		{
+			super.elementRemoved(element,index,notifyListeners);
+			element.visible = true;
+			element.includeInLayout = true;
+			if(index==selectedIndex)
+			{
+				if(numElements>1)
+					setSelectedIndex(0);
+				else
+					setSelectedIndex(-1);
+			}
+		}
+		
+		/**
+		 * 子项显示列表顺序发生改变。
+		 */		
+		private var childOrderingChanged:Boolean = false;
+		
+		override protected function commitProperties():void
+		{
+			super.commitProperties();
+			if (proposedSelectedIndex != NO_PROPOSED_SELECTION)
+			{
+				commitSelection(proposedSelectedIndex);
+				proposedSelectedIndex = NO_PROPOSED_SELECTION;
+			}
+			
+			if(childOrderingChanged)
+			{
+				childOrderingChanged = false;
+				var elements:Array = getElementsContent();
+				for each(var element:IVisualElement in elements)
+				{
+					if(element is DisplayObject&&element.parent==this)
+					{
+						addToDisplayList(DisplayObject(element));
+					}
+				}
+			}
+		}
+		
+		private function commitSelection(newIndex:int):void
+		{
+			var oldIndex:int = _selectedIndex;
+			if(newIndex>=0&&newIndex<numElements)
+			{
+				_selectedIndex = newIndex;
+				if(_selectedChild&&_selectedChild.parent==this)
+				{
+					_selectedChild.visible = false;
+					_selectedChild.includeInLayout = false;
+				}
+				_selectedChild = getElementAt(_selectedIndex);
+				_selectedChild.visible = true;
+				_selectedChild.includeInLayout = true;
+				if(_selectedChild.parent!=this&&_selectedChild is DisplayObject)
+				{
+					addToDisplayList(DisplayObject(_selectedChild));
+					if(!childOrderingChanged)
+					{
+						childOrderingChanged = true;
+					}
+				}
+			}
+			else
+			{
+				_selectedChild = null;
+				_selectedIndex = -1;
+			}
+			invalidateSize();
+			invalidateDisplayList();
+		}
+
+	}
+}

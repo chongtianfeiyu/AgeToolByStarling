@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datatable>
+  <item serverId="1" name="服务器" desc="" ip="122.228.70.60" port="28000" />
+  <item serverId="2" name="大辉" desc="" ip="192.168.1.158" port="28000" />
+</datatable>
+
